@@ -32,7 +32,7 @@ clonar el repo
 - Ajustar parámetros generales: batch, epochs tamaño de imagen t tipo de modelo (s, ls, ....,x)
 - Ajustar hiperparámetros: augmentation del dataset
 
-## Cumplimiento de la meta
+# Cumplimiento de la meta
 
 se crearon 3 modulos:
 - _dataset.py_: para importar el dataset desde roboflow utilizando la libreria propia de roboflow y sus metodos.
