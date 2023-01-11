@@ -40,5 +40,16 @@ se crearon 3 modulos:
 - _export_: una vez creado en _.pt_ desde el entranamiento y validación se utiliza para crear el _.onnx_ para exportar el modelo.
 - _train_yolov8_workflow.py_  contiene la libreria de metaflow con sus respectivos decorators para relaizar las tareas segun el orden start(importa dataset)->train (entrena el modelo)-> end (exporta el modelo)
 
+para realizar el entrenamiento se tiene que crear el entorno virtual e instalar: 
+
+	% pip install roboflow
+	% pip intall ltralytics
+	% pip install metaflow
+
+luego en terminal:
+
+% python train_yolov8_workflow.py show # para ver los pasos del worflow
+% python train_yolov8_workflow.py run # para correr el worflow
+
 
 
