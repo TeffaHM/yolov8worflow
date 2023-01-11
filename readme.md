@@ -30,5 +30,15 @@ clonar el repo
 
 2. Entenamiento Modelo:
 - Ajustar parámetros generales: batch, epochs tamaño de imagen t tipo de modelo (s, ls, ....,x)
-- Ajustar hiperparámetros: augmentation del dataset, 
+- Ajustar hiperparámetros: augmentation del dataset
+
+## Cumplimiento de la meta
+
+se crearon 3 modulos:
+- _dataset.py_: para importar el dataset desde roboflow utilizando la libreria propia de roboflow y sus metodos.
+- _train_: contiene la función para entrenar el modelo con el dataset importado 
+- _export_: una vez creado en _.pt_ desde el entranamiento y validación se utiliza para crear el _.onnx_ para exportar el modelo.
+- _train_yolov8_workflow.py_  contiene la libreria de metaflow con sus respectivos decorators para relaizar las tareas segun el orden start(importa dataset)->train (entrena el modelo)-> end (exporta el modelo)
+
+
 
