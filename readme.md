@@ -1,16 +1,3 @@
-Dasboard yolov7 con deepsort
-
-		# entorno virtual o capsula
-		mkdir 'carpeta' #se crea carpeta que alojará el entorno virtual
-		virtualenv 'nombre' # crea el entorno virtual
-		source 'nombre'/bin/activate # activa el etorno virtual 
-
-		(yolov5_env) 'usuario pc' 'carpeta' % 
-		%pip install -r requirements.txt # para instalar las librerias que correspondan
-
-clonar el repo 
-
-
 # Posible meta:
 
 ## _Construir un worflow local (sin deploy aún) para el entrenamiento del modelo_
@@ -33,6 +20,7 @@ clonar el repo
 - Ajustar hiperparámetros: augmentation del dataset
 
 # Cumplimiento de la meta
+## worflow con metaflow para importar, entrenar y exportar modelo
 
 se crearon 3 modulos:
 - _dataset.py_: para importar el dataset desde roboflow utilizando la libreria propia de roboflow y sus metodos.
@@ -52,4 +40,13 @@ se crearon 3 modulos:
 	% python train_yolov8_workflow.py run # para correr el worflow
 
 
+## Creación Entorno Virtual
+
+		# entorno virtual o capsula
+		mkdir 'carpeta' #se crea carpeta que alojará el entorno virtual
+		virtualenv 'nombre' # crea el entorno virtual
+		source 'nombre'/bin/activate # activa el etorno virtual 
+
+		(yolov5_env) 'usuario pc' 'carpeta' % 
+		%pip install -r requirements.txt # para instalar las librerias que correspondan
 
