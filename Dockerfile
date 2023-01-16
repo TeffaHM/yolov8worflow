@@ -11,4 +11,5 @@ RUN git clone https://github.com/data-ixalab-t02/yolov8worflow.git .
 COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir --upgrade pip &&\
  pip install --no-cache-dir -r requirements.txt
+USER 1000
 ENTRYPOINT ["python", "workflow.py", "run", "--server.port=8501"]
