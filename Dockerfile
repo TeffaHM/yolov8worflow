@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 EXPOSE 8501 
-WORKDIR /metaflow
+WORKDIR /app
 USER 1000
 RUN apt-get update &&\
  apt-get install -y build-essential &&\
