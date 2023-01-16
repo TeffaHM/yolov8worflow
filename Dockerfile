@@ -10,9 +10,9 @@ RUN apt-get update &&\
  apt-get install -y git &&\
  apt-get install -y libgl1 &&\
  rm -rf /var/lib/apt/lists/*
-USER 1001
 RUN git clone https://github.com/data-ixalab-t02/yolov8worflow.git .
 COPY requirements.txt requirements.txt
+USER 1001
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 ENTRYPOINT ["python", "workflow.py", "run", "--server.port=8501"]
