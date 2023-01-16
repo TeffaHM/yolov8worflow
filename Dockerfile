@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.10.8
 EXPOSE 8501 
 WORKDIR /app 
 RUN apt-get update &&\
