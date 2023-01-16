@@ -2,7 +2,7 @@ FROM python:3.10.8
 EXPOSE 8501 
 WORKDIR /app 
 RUN apt-get update &&\
- apt install -y libgl1-mesa-glx &&\
+ apt-get install -y libgl1-mesa-glx &&\
  apt-get install -y build-essential &&\
  apt-get install -y software-properties-common &&\
  apt-get install -y git &&\
