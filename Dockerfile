@@ -1,9 +1,6 @@
 FROM python:3.10-slim
 EXPOSE 8501 
-RUN mkdir /logs && chown 1000 /logs
-RUN mkdir /metaflow && chown 1000 /metaflow
-ENV HOME=/metaflow
-WORKDIR /metaflow
+ENV user=foo USER ${user} WORKDIR /home/${user}
 RUN apt-get update &&\
  apt-get install -y build-essential &&\
  apt-get install -y software-properties-common &&\
