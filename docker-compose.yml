@@ -2,7 +2,7 @@ version: '3'
 services:
  metaflow-compose:
     image: metaflow
-    user: 1001
+    user: meta
     working_dir: /metaflow
     stdin_open: true
     volumes:
