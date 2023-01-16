@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.11
 EXPOSE 8501 
 WORKDIR /app
 USER 1000
