@@ -1,3 +1,4 @@
+!export USERNAME='metaflow'
 from metaflow import FlowSpec, step
 from dataset import importar
 from train import entrenar
