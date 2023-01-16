@@ -2,8 +2,6 @@ from metaflow import FlowSpec, step
 from dataset import importar
 from train import entrenar
 from export import exportar
-import os
-os.environ.update({"USERNAME": "1000"})
 
 
 class trainflow(FlowSpec):

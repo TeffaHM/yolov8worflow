@@ -3,7 +3,7 @@ services:
  metaflow-compose:
     image: metaflow
     user: $UID:$GID
-    working_dir: $HOME
+    working_dir: /metaflow
     stdin_open: true
     volumes:
       - /etc/group:/etc/group:ro
