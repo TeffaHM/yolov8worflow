@@ -9,4 +9,5 @@ RUN apt-get update &&\
  rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/data-ixalab-t02/yolov8worflow.git .
 RUN pip install -qr requirements.txt
+RUN export USERNAME='metaflow'
 ENTRYPOINT ["python", "workflow.py", "run", "--server.port=8501"]
